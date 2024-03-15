@@ -1,0 +1,14 @@
+import math
+
+def area_with_sides(a, b, c):
+    s = (a + b + c) / 2
+    area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+    return area
+
+# Example usage:
+side1 = float(input("Enter the length of side 1: "))
+side2 = float(input("Enter the length of side 2: "))
+side3 = float(input("Enter the length of side 3: "))
+
+area = area_with_sides(side1, side2, side3)
+print("The area of the triangle is:", area)
